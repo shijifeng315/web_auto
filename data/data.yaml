@@ -1,0 +1,31 @@
+info:
+  - - name: test
+      age: 22
+      sex: F
+      mail: 222@qq.com
+    - code: 0
+      msg: update some data!
+  - - name: test_xa
+      age: 22
+      sex: F
+      mail: 222@qq.com
+    - code: 4003
+      msg: 无权限操作
+
+login:
+  - - username: test1
+      password: '123456'
+    - code: 0
+      msg: login success!
+  - - username: testaaa1
+      password: '123456'
+    - code: 3003
+      msg: 账号或密码不正确
+  - - username: test2
+      password: 123456x
+    - code: 3003
+      msg: 账号或密码不正确
+  - - username: ''
+      password: ''
+    - code: 3003
+      msg: 账号或密码不正确
